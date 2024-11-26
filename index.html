@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badulla ATI Volleyball Tournament</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" onclick="showSection('home')" class="logo">Badulla ATI Volleyball Tournament</a>
+    <nav>
+      <button class="menu-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="navigation">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('schedule')">Schedule</a></li>
+        <li><a href="#" onclick="showSection('teams')">Teams</a></li>
+        <li><a href="#" onclick="showSection('registration')">Registration</a></li>
+        <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section active">
+    <div class="home-overview-container">
+      <div class="home">
+        <h2>Home</h2>
+        <p><strong>Event Name:</strong> Badulla ATI Volleyball Tournament</p>
+        <p><strong>Event Date and Location:</strong> April 20-22, 2024, Badulla Sports Complex</p>  
+        <p><strong>Venue:</strong> Badulla Sports Complex</p>
+        <p><strong>Address:</strong> [Address of the venue]</p>
+        <p><strong>Contact:</strong> [Contact Information]</p>
+        <h3>Amenities</h3>
+        <p>Parking, facilities, and other amenities available at the venue.</p>
+        <a href="#" onclick="showSection('registration')" class="cta-button">Register Now</a>
+      </div>
+      <div class="overview">
+        <h3>Event Overview</h3>
+        <p>Join us for an exciting tournament featuring teams from across the region!</p>
+        <div class="slideshow-container">
+          <img class="slides fade" src="resources/image1.jpg" alt="Image 1">
+          <img class="slides fade" src="resources/image2.jpg" alt="Image 2">
+          <img class="slides fade" src="resources/image3.jpg" alt="Image 3">
+          <img class="slides fade" src="resources/image4.jpg" alt="Image 4">
+          <img class="slides fade" src="resources/image5.jpg" alt="Image 5">
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section">
+    <h2>Schedule</h2>
+    <h3>Detailed Agenda</h3>
+    <ul>
+      <li><strong>Opening Ceremony:</strong> April 20, 9:00 AM</li>
+      <li><strong>Match Times:</strong> April 20-22, various times</li>
+      <li><strong>Closing Ceremony:</strong> April 22, 5:00 PM</li>
+    </ul>
+  </section>
+
+  <section id="teams" class="section">
+    <h2>Teams</h2>
+    <h3>Participating Teams</h3>
+    <ul>
+      <li>
+        <img src="path/to/team-logo1.jpg" alt="Team 1" class="team-logo">
+        Team 1: A brief description of Team 1.
+      </li>
+      <li>
+        <img src="path/to/team-logo2.jpg" alt="Team 2" class="team-logo">
+        Team 2: A brief description of Team 2.
+      </li>
+      <li>
+        <img src="path/to/team-logo3.jpg" alt="Team 3" class="team-logo">
+        Team 2: A brief description of Team 3.
+      </li>
+      <li>
+        <img src="path/to/team-logo4.jpg" alt="Team 4" class="team-logo">
+        Team 2: A brief description of Team 4.
+      </li>
+      <li>
+        <img src="path/to/team-logo5.jpg" alt="Team 5" class="team-logo">
+        Team 2: A brief description of Team 5.
+      </li>
+    </ul>
+  </section>
+
+  <section id="registration" class="section">
+    <h3>Online Registration Form</h3>
+    <div class="clearfix">
+      <form action="#" class="form" aria-labelledby="registration-form">
+        <h2 id="registration-form">Registration Form</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+
+        <label for="team-name">Team Name</label>
+        <input type="text" id="team-name" name="team-name" required aria-required="true">
+
+        <label for="members">Members Name</label>
+        <textarea id="members" name="members" required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="registration-info">
+        <h3>Registration Fees</h3>
+        <p>Details on any fees associated with participation will be provided here.</p>
+      </div>
+    </div>
+  </section>
+  <section id="faqs" class="section">
+    <h2>FAQs</h2>
+    <h3>Common Questions</h3>
+    <ul>
+      <li><strong>What is the registration process?</strong> Details about registration.</li>
+      <li><strong>Are there any fees?</strong> Explanation of fees.</li>
+      <li><strong>What should I bring?</strong> List of items to bring.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>For inquiries, contact us at:</p>
+    <p>Email: info@badullaati.com</p>
+    <p>Phone: +94 123 456 789</p>
+
+    <p>Stay updated through our social media:</p>
+    <div class="social-media">
+      <h3>Follow Us:</h3>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h3>Subscribe to our Newsletter</h3>
+      <form action="#" class="newsletter-form">
+        <label for="newsletter-email">Email:</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" required aria-required="true">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Badulla ATI Volleyball Tournament</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
