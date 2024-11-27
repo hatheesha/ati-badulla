@@ -168,7 +168,8 @@ p {
 
 /* home section */
 .home {
-  width: 45%;/ text-align: left;
+  width: 45%; 
+  text-align: left;
 }
 
 .home-overview-container {
