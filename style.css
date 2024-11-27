@@ -10,6 +10,22 @@ body {
   background-color: white;
 }
 
+/*All button style*/
+.cta-button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* header bar */
 header {
   position: fixed;
   top: 0;
@@ -50,7 +66,6 @@ nav ul {
 
 nav ul li {
   font-size: 14px;
-  /* Decreased font size */
   font-weight: 600;
 }
 
@@ -129,6 +144,7 @@ nav ul li a:hover::after {
   }
 }
 
+/*section*/
 .section {
   background-color: #f4f4f4;
   padding: 2em;
@@ -140,50 +156,6 @@ nav ul li a:hover::after {
   display: block;
 }
 
-.home-overview-container {
-  display: flex;
-  justify-content: space-between;
-  /* Aligns items to the left and right */
-  margin: 20px;
-  /* Add some margin for spacing */
-}
-
-.home {
-  width: 45%;
-  /* Set width for the home section */
-  text-align: left;
-  /* Align text to the left */
-}
-
-.overview {
-  width: 45%;
-  /* Set width for the overview section */
-  text-align: left;
-  /* Align text to the right */
-}
-.slideshow-container {
-  position: relative;
-  max-width: 600px; /* Set the width of the slideshow */
-  margin: auto;
-  overflow: hidden;
-  border: 2px solid #ddd; /* Optional border */
-  border-radius: 10px; /* Optional rounded corners */
-}
-.slides {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-.active {
-  display: block;
-}
-.fade {
-  animation: fade 1.5s ease-in-out;
-}
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 /* Optional: Add some styling for the sections */
 h2,
 h3 {
@@ -194,52 +166,64 @@ p {
   margin-bottom: 10px;
 }
 
-.newsletter {
-  background-color: #f9f9f9; /* Light background for contrast */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  margin-top: 20px; /* Space above the section */
-  text-align: center; /* Center align text */
+/* home section */
+.home {
+  width: 45%;/ text-align: left;
 }
 
-.newsletter h3 {
-  font-size: 1.5em; /* Larger font for the heading */
-  margin-bottom: 10px; /* Space below the heading */
+.home-overview-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.newsletter-form {
-  display: flex; /* Flexbox for layout */
-  justify-content: center; /* Center the form elements */
-  align-items: center; /* Align items vertically */
+.overview {
+  width: 45%;
+  text-align: left;
+
 }
 
-.newsletter-form label {
-  margin-right: 10px; /* Space between label and input */
+/* home section slide show*/
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
 }
 
-.newsletter-form input[type="email"] {
-  padding: 10px; /* Inner padding */
-  border: 1px solid #ccc; /* Border styling */
-  border-radius: 4px; /* Slightly rounded corners */
-  font-size: 1em; /* Font size */
+.slides {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
-.newsletter-form button {
-  padding: 10px 20px; /* Padding for button */
-  background-color: #007BFF; /* Button background color */
-  color: white; /* Button text color */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 1em; /* Font size */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+.active {
+  display: block;
 }
 
-.newsletter-form button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+.fade {
+  animation: fade 1.5s ease-in-out;
 }
 
-/* Form styles */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Team section logo*/
+.team-logo {
+  max-width: 50px;
+  margin: 10px;
+}
+
+/*Registration Form styles */
 .clearfix {
   display: flex;
   justify-content: space-between;
@@ -255,7 +239,6 @@ p {
 .form {
   text-align: left;
   width: 50%;
-  /* Fixed width for the form */
 }
 
 .form label {
@@ -297,9 +280,7 @@ p {
 
 .registration-info {
   text-align: left;
-  /* Align text to the right */
   width: 45%;
-  /* Fixed width for the registration info */
   padding-left: 20px;
   border-left: 1px solid #ccc;
 }
@@ -313,32 +294,26 @@ p {
   color: #666;
 }
 
-/* Responsive Design */
+/* Responsive Design for Registration section */
 @media (max-width: 768px) {
   .clearfix {
     flex-direction: column;
-    /* Stack elements on smaller screens */
   }
 
   .form,
   .registration-info {
     width: 100%;
-    /* Full width on mobile */
     margin-right: 0;
-    /* Remove right margin */
     padding-left: 0;
-    /* Remove left padding */
     border-left: none;
-    /* Remove border on mobile */
   }
 
   .registration-info {
     text-align: left;
-    /* Align text left on mobile */
   }
 }
 
-/* Paragraph styles */
+/* contact section Paragraph styles */
 .social-media {
   margin-top: 20px;
   text-align: center;
@@ -371,6 +346,53 @@ p {
   transform: scale(1.1);
 }
 
+/* contact section news letter*/
+.newsletter {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-form label {
+  margin-right: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #0056b3;
+}
+
+/* footer bar  */
 footer {
   background-color: #333;
   color: white;
@@ -381,23 +403,4 @@ footer {
   left: 0;
   width: 100%;
   margin-top: 5em;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 10px 10px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
-.team-logo {
-  max-width: 50px;
-  margin: 10px;
 }
