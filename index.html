@@ -109,11 +109,12 @@
   </section>
   <!-- Registration Section -->
   <section id="registration" class="section">
-    <h3>Online Registration Form</h3>
-    <div class="clearfix">
-      <form action="#" class="form" aria-labelledby="registration-form">
-        <h2 id="registration-form">Registration Form</h2>
-
+    <h3>Online Registration</h3>
+    <button id="show-form" class="cta-button">Show Registration Form</button>
+    <button id="show-fees" class="cta-button">Show Registration Fees</button>
+    
+    <div id="registration-form" class="form" style="display: none;">
+        <h2>Registration Form</h2>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required aria-required="true">
 
@@ -127,14 +128,13 @@
         <textarea id="members" name="members" required aria-required="true"></textarea>
 
         <button type="submit">Send Message</button>
-      </form>
+    </div>
 
-      <div class="registration-info">
+    <div id="registration-fees" class="registration-info" style="display: none;">
         <h3>Registration Fees</h3>
         <p>Details on any fees associated with participation will be provided here.</p>
-      </div>
     </div>
-  </section>
+</section>
   <!-- FAQ Section -->
   <section id="faqs" class="section">
     <h2>FAQs</h2>

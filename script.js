@@ -31,3 +31,17 @@ function showSlides() {
 }
 
 showSlides();
+const showFormButton = document.getElementById('show-form');
+const showFeesButton = document.getElementById('show-fees');
+const registrationForm = document.getElementById('registration-form');
+const registrationFees = document.getElementById('registration-fees');
+
+showFormButton.addEventListener('click', () => {
+    registrationForm.style.display = 'block';
+    registrationFees.style.display = 'none';
+});
+
+showFeesButton.addEventListener('click', () => {
+    registrationFees.style.display = 'block';
+    registrationForm.style.display = 'none';
+});
